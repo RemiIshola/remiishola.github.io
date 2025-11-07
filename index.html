@@ -4,8 +4,9 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Remi Ishola — Portfolio</title>
+  <meta name="description" content="Remi Ishola — Digital Enterprise & Administrative Assistance Specialist. Portfolio and case studies." />
   <link rel="stylesheet" href="styles.css" />
-  <meta name="description" content="Remi Ishola — Digital Enterprise & Virtual Assistance Specialist. Portfolio and case studies." />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
   <!-- Preloader -->
@@ -28,7 +29,7 @@
           </p>
         </div>
         <div class="hero-media">
-          <img src="assets/profile.png" alt="Remi Ishola" class="avatar"/>
+          <div class="avatar-faux" aria-hidden="true">RI</div>
         </div>
       </div>
     </header>
@@ -41,14 +42,55 @@
         </div>
       </section>
 
-      <section id="skills" class="section skills">
+      <!-- Unified Skills + Tools -->
+      <section id="skills" class="skills-section">
         <div class="container">
-          <h2>Skills</h2>
-          <div class="chips">
-            <span class="chip">Project Management</span>
-            <span class="chip">Virtual Assistance</span>
-            <span class="chip">Digital Transformation</span>
-            <span class="chip">Web Design</span>
+          <h2>Skills, Tools & Technologies</h2>
+          <p class="section-intro">
+            A collection of technologies and creative tools I work with to design, develop, and deploy modern digital experiences.
+          </p>
+
+          <div class="skills-grid">
+
+            <div class="skill-category fade-up">
+              <h3><i class="fa-solid fa-code"></i> Frontend Development</h3>
+              <div class="skills-list">
+                <span><i class="fa-brands fa-html5"></i> HTML5</span>
+                <span><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+                <span><i class="fa-brands fa-js"></i> JavaScript</span>
+                <span><i class="fa-brands fa-react"></i> React</span>
+                <span><i class="fa-brands fa-bootstrap"></i> Bootstrap</span>
+              </div>
+            </div>
+
+            <div class="skill-category fade-up">
+              <h3><i class="fa-solid fa-server"></i> Backend & Databases</h3>
+              <div class="skills-list">
+                <span><i class="fa-brands fa-node-js"></i> Node.js</span>
+                <span><i class="fa-solid fa-plug"></i> Express.js</span>
+                <span><i class="fa-solid fa-database"></i> MongoDB</span>
+              </div>
+            </div>
+
+            <div class="skill-category fade-up">
+              <h3><i class="fa-solid fa-paintbrush"></i> Design & Prototyping</h3>
+              <div class="skills-list">
+                <span><i class="fa-brands fa-figma"></i> Figma</span>
+                <span><i class="fa-brands fa-adobe"></i> Adobe XD</span>
+                <span><i class="fa-solid fa-layer-group"></i> UI/UX Principles</span>
+              </div>
+            </div>
+
+            <div class="skill-category fade-up">
+              <h3><i class="fa-solid fa-gear"></i> Workflow & Version Control</h3>
+              <div class="skills-list">
+                <span><i class="fa-brands fa-github"></i> GitHub</span>
+                <span><i class="fa-solid fa-terminal"></i> CLI</span>
+                <span><i class="fa-brands fa-trello"></i> Trello</span>
+                <span><i class="fa-brands fa-slack"></i> Slack</span>
+              </div>
+            </div>
+
           </div>
         </div>
       </section>
@@ -70,7 +112,8 @@
               <div class="card-body">
                 <h3>Digital Enterprise Support</h3>
                 <p>Supported digital transformation initiatives, coordinated cross-functional projects, and enhanced client communications for smoother delivery.</p>
-              </article>
+              </div>
+            </article>
 
             <article class="card">
               <img src="assets/project3.png" alt="Portfolio & Web Presence"/>
@@ -103,12 +146,14 @@
       <section id="contact" class="section contact">
         <div class="container">
           <h2>Contact</h2>
-          <p>I'd love to hear from you — connect via email or LinkedIn.</p>
+          <p>I'd love to hear from you — connect via email, phone or LinkedIn.</p>
           <ul class="contact-list">
             <li>GitHub: <a href="https://github.com/RemiIshola" target="_blank" rel="noopener">github.com/RemiIshola</a></li>
-            <li>LinkedIn: <a href="https://linkedin.com/in/remi" target="_blank" rel="noopener">linkedin.com/in/remi</a></li>
-            <li>Email: <a href="mailto:remi@example.com">remi@example.com</a></li>
-            <li>Website / Blog: <a href="https://remi.com" target="_blank" rel="noopener">remi.com</a></li>
+            <li>LinkedIn: <a href="https://www.linkedin.com/in/remiactive" target="_blank" rel="noopener">linkedin.com/in/remiactive</a></li>
+            <li>Email: <a href="mailto:remiishola@proton.me">remiishola@proton.me</a></li>
+            <li>Alt Email: <a href="mailto:isholaoluwaremilekunoluwatobil@gmail.com">isholaoluwaremilekunoluwatobil@gmail.com</a></li>
+            <li>Phone: <a href="tel:+2349121333552">+234 912 133 3552</a></li>
+            <li>Wix: <a href="https://remiishola.wixsite.com/remiishola" target="_blank" rel="noopener">remiishola.wixsite.com/remiishola</a></li>
           </ul>
 
           <form id="contact-form" class="contact-form" onsubmit="return false;">
@@ -120,7 +165,12 @@
       </section>
     </main>
 
-    <button id="backTop" class="back-to-top" aria-label="Back to top">↑</button>
+    <!-- back to top, theme toggle included here -->
+        <button id="backToTop" aria-label="Back to top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <div class="theme-toggle" id="themeToggle" title="Toggle theme">🌙</div>
 
     <footer class="site-footer">
       <div class="container">
